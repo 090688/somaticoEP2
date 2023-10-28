@@ -172,6 +172,11 @@ awk -F "\t" '{if($4>=20){print}}' \
 wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.2.2.0.zip
 ```
 
+# Unzip GATK4
+```bash
+unzip gatk-4.2.2.0.zip
+```
+
 
 # Gerar arquivo.dict
 ```bash
