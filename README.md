@@ -234,7 +234,7 @@ brew install vcftools
 ```
 
 ```bash
-vcf-compare WP312.filtered.pon.vcf.gz WP312.filtered.chr.vcf.gz 
+vcf-compare WP312.filtered.pon.vcf.gz WP312.filtered.vcf.gz 
 ```
 
 ```bash
