@@ -133,6 +133,22 @@ tabix -p vcf Mutect2-WGS-panel-b37.chr.vcf.gz
 samtools rmdup WP312_sorted.bam WP312_sorted_rmdup.bam
 ```
 
+# Cobertura - MAKE BED Files
+# Instalação do bedtools
+```bash
+brew install bedtools
+```
+# Gerar arquivo BED a partir do arquivo BAM
+```bash
+bedtools bamtobed -i WP312_sorted_rmdup.bam > WP312_sorted_rmdup.bed
+```
+```bash
+bedtools merge -i WP312_sorted_rmdup.bed > WP312_sorted_rmdup_merged.bed
+```
+```bash
+bedtools sort -i WP312_sorted_rmdup_merged.bed > WP312_sorted_rmdup_merged_sorted.bed
+```
+
 
 # GATK4 - Mutect Call (Refs hg19 com chr)
 
