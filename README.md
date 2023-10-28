@@ -128,6 +128,12 @@ bgzip Mutect2-WGS-panel-b37.chr.vcf
 tabix -p vcf Mutect2-WGS-panel-b37.chr.vcf.gz
 ```
 
+# Retirar duplicata de PCR
+```bash
+samtools rmdup WP312_sorted.bam WP312_sorted_rmdup.bam
+```
+
+
 # GATK4 - Mutect Call (Refs hg19 com chr)
 
 ```bash
