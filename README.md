@@ -100,16 +100,6 @@ wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-
 wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-gnomad.raw.sites.vcf.idx
 ```
 
-
-> Arquivo no formato FASTA do genoma humano hg19
-
-Diretório Download UCSC hg19:https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/
-chr9.fa.gz: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
-
-```bash
-wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
-```
-
 ---
 
 # Adicionando chr nos VCFs do Gnomad e PoN
