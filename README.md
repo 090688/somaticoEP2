@@ -234,6 +234,33 @@ brew install vcftools
 ```
 
 ```bash
+grep "\#" WP312.filtered.vcf.gz > header.txt
+```
+```bash
+zgrep -v "\#" WP312.filtered.vcf.gz | awk '{print("chr"$0)}' > variants.txt
+```
+```bash
+cat header.txt variants.txt > WP312.filtered.chr.vcf
+```
+```bash
+bgzip WP312.filtered.chr.vcf
+```
+```bash
+tabix WP312.filtered.chr.vcf.gz
+```
+
+#Filtrando o chr9
+```bash
+zgrep "^\#\|chr9" WP312.filtered.chr.vcf.gz > WP312.filtered.chr9.vcf
+```
+```bash
+bgzip  WP312.filtered.chr9.vcf
+```
+```bash
+tabix WP312.filtered.chr9.vcf.gz
+```
+
+```bash
 vcf-compare WP312.filtered.pon.vcf.gz WP312.filtered.vcf.gz 
 ```
 
