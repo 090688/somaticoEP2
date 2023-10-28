@@ -170,7 +170,7 @@ awk -F "\t" '{if($4>=20){print}}' \
 # Instalar GATK
 ```bash
 wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.2.2.0.zip
-```bash
+```
 
 
 # Gerar arquivo.dict
