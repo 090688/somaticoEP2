@@ -230,7 +230,11 @@ unzip gatk-4.2.2.0.zip
 ```
 
 ```bash
-vcf-compare WP312.filtered.pon.vcf.gz ../WP312.filtered.chr.vcf.gz 
+brew install vcftools
+```
+
+```bash
+vcf-compare WP312.filtered.pon.vcf.gz WP312.filtered.chr.vcf.gz 
 ```
 
 ```bash
