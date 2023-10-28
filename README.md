@@ -167,6 +167,10 @@ awk -F "\t" '{if($4>=20){print}}' \
 > WP312_coverageBed20x.bed
 ```
 
+# Instalar GATK
+```bash
+brew install GATK
+```bash
 
 # Gerar arquivo .dict
 ```bash
