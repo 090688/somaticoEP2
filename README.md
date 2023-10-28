@@ -169,13 +169,15 @@ awk -F "\t" '{if($4>=20){print}}' \
 
 # Instalar GATK
 ```bash
-brew install GATK
+wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.2.2.0.zip
 ```bash
 
-# Gerar arquivo .dict
+
+# Gerar arquivo.dict
 ```bash
 ./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
 ```
+
 # Geral interval_list do ch9
 ```bash
 ./gatk-4.2.2.0/gatk ScatterIntervalsByNs -R chr9.fa -O chr9.interval_list -OT ACGT
