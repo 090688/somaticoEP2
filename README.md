@@ -168,6 +168,20 @@ awk -F "\t" '{if($4>=20){print}}' \
 ```
 
 
+# Gerar arquivo .dict
+```bash
+./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
+```
+# Geral interval_list do ch9
+```bash
+./gatk-4.2.2.0/gatk ScatterIntervalsByNs -R chr9.fa -O chr9.interval_list -OT ACGT
+```
+# Converter BED para Interval_list
+```bash
+./gatk-4.2.2.0/gatk BedToIntervalList -I WP312_coverageBed20x.bed \
+-O WP312_coverageBed20x.interval_list -SD chr9.dict
+```
+
 # GATK4 - Mutect Call (Refs hg19 com chr)
 
 ```bash
