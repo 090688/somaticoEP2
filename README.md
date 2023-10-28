@@ -209,7 +209,6 @@ unzip gatk-4.2.2.0.zip
 -O WP312.contamination.table
 ```
 
-**Cuidado:** Use esse parâmetro quando a referência for a correta, mas esteja fora de ordenação: `--disable-sequence-dictionary-validation`
 
 ```bash
 ./gatk-4.2.2.0/gatk Mutect2 \
