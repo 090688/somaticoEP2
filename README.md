@@ -38,7 +38,12 @@ time parallel-fastq-dump --sra-id SRR8856724 \
 BWA para mapeamento dos arquivos FASTQ 
 
 ```
-brew install bwa 
+brew install bwa
+```
+
+## Referência chr9 hg19
+```bash
+wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
 ```
 
 BWA index do arquivo chr9.fa.gz
